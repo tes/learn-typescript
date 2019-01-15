@@ -1,0 +1,32 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tes/learn-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tes/learn-typescript/issues"
+  },
+  "homepage": "https://github.com/tes/learn-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "nodemon": "^1.18.9",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
